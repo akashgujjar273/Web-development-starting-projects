@@ -1,0 +1,23 @@
+//- title sbhi page m maan lo same title rakhna h
+//- base.pug ko home.pug ki madat se fill kr rhe h
+
+doctype html
+html
+  head
+    title Akash Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar.top 
+        ul 
+          div#logo 
+            img(src="../static/logo3.png") 
+            | AD
+            li #[a(href="/") Home ]
+            li #[a(href="/") Prices ]
+            li #[a(href="/") Timing  ]
+            li #[a(href="/contact") Contact us]
+            li #[a(href="/") About us]
+    block content
+    footer#footer 
+        span Copywright © 2021 AkashDanceacademy.com | All Rights Reserved

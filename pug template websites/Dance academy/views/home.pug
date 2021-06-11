@@ -1,0 +1,51 @@
+//- extende.pug yaani isne base.pug ko dhyaan m rakhte hue khud ko bharna chalu kia pr jaha bhi block aya vaha m use bhurdunga ya replace krdunga
+//- base.pug m jo block content h home se usme vo same chize vaha bhj di jayegi
+//- jese ek form m naam adress y sb colum pehle se ate h vese hi base.pug ek template bn chuka h jo home se chize le rha h jaha jaha block lga h
+//- iska fayda ab contact.pug bhi uthayega
+extends base.pug
+block scripts
+  script(src='../static/index.js  ')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    section#intro 
+        div Welcome to our dance academy 
+        div Eat Sleep Dance Repeat
+        //- div Thank you so much chelsie for your feed back
+        //- div We love to see your more feedbacks 
+    section#mission 
+        h2 Our mission
+        div.card
+          h3 Dance the way you like
+          div.card-box
+                div.card-img
+                    img(src="/static/cardbgp.png")
+                div.card-content
+                    p Dance is not only a wonderful way to express yourself but also a fantastic spare time activity you can enjoy with your partner. Dancing will definitely boost your mood, helps you to forget everything around you.
+        div.card
+          h3 Be Fit and Live healthy lifestyle
+          div.card-box
+                div.card-img
+                    img(src="/static/cardbgp.png")
+                div.card-content
+                    p Dancing is so much more than just grooving on the dance floor to your favorite tunes. In fact, you’ll be surprised how many benefits are associated with dancing. Not only does it train your brain and your body’s motor skills but it also is an excellent exercise for your entire body.
+        div.card
+          h3 Expert Trainers
+          div.card-box
+                div.card-img
+                    img(src="/static/cardbgp.png")
+                div.card-content
+                    p Our academy has top certified trainers and experienced people. We do care about our gym members that's why we hire top trainers.
+    section#sponsores
+        h2 Our sponsores
+        div#sponsores-box
+          img(src= "../static/sp5.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/sp6.png", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/sp4.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/sp7.png", alt= "Sponsor Image", class= "spImage")
+        div#sponser-second
+          img(src= "../static/sp8.jpg", alt= "Sponsor Image", class= "spImage")
+          img(src= "../static/sp1.png", alt= "Sponsor Image", class= "spImage")

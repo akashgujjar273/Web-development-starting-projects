@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.navigation{
+    /* height: 75px; */
+    margin-top: 25px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1)
+}
+.nav-left{
+    display: flex;
+}
+.nav-left span{
+    font-size: 40px;
+    padding-top: 5px;
+}
+.nav-left span img{
+  width: 150px;
+}
+.nav-left ul{
+    display: flex;
+    align-items: center;
+    margin: 15px 75px;
+    font-size: 22px;
+}
+.nav-left ul li{
+    list-style: none;
+    margin: 0 15px;
+    font-family: var(--font2);
+}
+.nav-left ul li a:hover{
+    font-weight: bold;
+    color: var(--main-bg-color);
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.content{
+    height: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    margin-top: 30px;
+    padding: 15px;
+    position: relative;
+    
+}
+.content::after{
+    background-image: url('../img/allmight.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    opacity: 0.25;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+}
+
+.content-left{
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    /* align-items: center; */
+}
+
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-right img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+/* height ristric krne se overflow ho jaeyga */
+.home-articles{
+    padding: 10px;
+    margin-top: 20px;
+    background-color:rgba(218, 216, 216, 0.5);
+    position: relative;
+}
+.year-box{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    right: 0px;
+    font-size: 18px;
+}
+.year-box div{ 
+ margin: 12px 0px;
+}
+.home-article{
+    display: flex;
+    margin: 25px;
+
+}
+.home-article-image img{
+    width: 300px;
+}
+.home-article-content{
+    align-self: center;
+    padding:25px;
+}
+.home-article-content a{
+    text-decoration:none;
+    color:black;
+}
+
+.footer{
+    height: 50px;
+    /* background-color: seagreen; */
+    background-color: rgb(6, 14, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}

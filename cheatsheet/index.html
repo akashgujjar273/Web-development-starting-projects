@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>CheatSheet</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo">
+            <img src="logo.png" alt="logo">
+        </span>
+        <div class="content center">
+            This is a cheat sheet for programming
+        </div>
+
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>HTML Code</b> this is a html boiler plate
+                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </li>
+            <li><b>Python Code</b> this is a python function
+                <pre class="language-python"><code># Function definition is here
+def printinfo( name, age ):
+    "This prints a passed info into this function"
+    print "Name: ", name
+    print "Age ", age
+    return;
+
+# Now you can call printinfo function
+printinfo( age=50, name="miki" )</code></pre>
+            </li>
+            <li><b>Javascript Code</b> this is a JS Class
+                <pre class="language-js"><code>class User {
+
+constructor(name) {
+    this.name = name;
+}
+
+sayHi() {
+    alert(this.name);
+}
+
+}
+
+// Usage:
+let user = new User("John");
+user.sayHi();</code></pre>
+            </li>
+            <li><b>Javascript Code</b> this is a JS Ajax Get Request
+                <pre class="language-js"><code>xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("demo").innerHTML = this.responseText;
+}
+};
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send();</code></pre>
+            </li>
+            <li><b>CSS Cheat Sheet</b> these are css selectors
+                <pre class="language-js"><code>Selectors
+*all elements
+divall div tags
+div,pall divs and paragraphs
+div pparagraphs inside divs
+div > pall p tags, one level deep in div
+div + pp tags immediately after div
+div ~ pp tags preceded by div
+.classnameall elements with class
+#idnameelement with ID
+div.classnamedivs with certain classname
+div#idnamediv with certain ID
+#idname *all elements inside #idname</code></pre>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* iski pos relative krne se handle idhar udhar nhi jaynge */
+/* pos relative krne se y hoga ki handle apni postions ko apne parent k mutabik rakhenge */
+#clockcontainer{
+    position: relative;
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    background: url(clock4.png) no-repeat;
+    filter: invert();
+    background-size: 100%;
+    background-position: center;
+
+}
+
+#hour , #minute , #second{
+    position: absolute;
+    background: black;
+    border-radius: 12px;
+    transform-origin: bottom;
+}
+#hour{
+    width: 1.6%;
+    height: 27%;
+    top: 22%;
+    left: 48.5%;
+}
+
+#minute{
+    width: 1.2%;
+    height: 36%;
+    top: 13%;
+    left: 49.5%;
+}
+
+#second{
+    width: 0.8%;
+    height: 42%;
+    top: 7%;
+    left: 49.4%;
+}
+
+body{
+    background:rgba(0, 0, 0, 0.7) url(bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: violet;
+    overflow: hidden;
+}
+.gamecontainer{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.itachi{
+    background-image: url(itachi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+.madra{
+    background-image: url(madra.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 1200px;
+    
+}
+#scorecount{
+    color: white;
+    border: 2px solid red;
+    font-size: 25px;
+    top: 0%;
+    right: 0%;
+    position: absolute;
+    font-family: sans-serif;
+}
+.animateitachi{
+    animation: itachi 0.6s linear;
+}
+.madramove{
+    animation: madra 6s linear infinite;
+}
+.gameover{
+    color: white;
+    position: relative;
+    top: 63px;
+    font-size: 55px;
+    text-align: center;
+    font-family: sans-serif;
+}
+@keyframes itachi{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 444px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes madra{
+    0%{
+        left:100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}

@@ -1,0 +1,25 @@
+.about-content{
+    height: 100vh;
+    /* background-color: royalblue; */
+    display: block;
+    margin-top: 30px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+.about-content::after{
+    top: 0;
+    background-image: url('../img/wallpapaer6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+}
+.about-box p{
+    font-size: 1vw;
+}

@@ -1,0 +1,58 @@
+@media only screen and (min-width: 200px) and (max-width: 1800px) {
+    body{
+        background-color: blue;
+
+    }
+    #m2{
+        width:fit-content;
+    }
+    #m3{
+        width:fit-content;
+    }
+    .sm{
+        width:fit-content;
+        background-size:inherit
+    }
+    .sm2{
+        width:fit-content;
+        background-size:inherit;
+    }
+    .sm3{
+        width:fit-content;
+        background-size: inherit;
+    }
+    .sm4{
+        width:fit-content;
+        background-size: inherit;
+    }
+    #middle{
+        width: fit-content;
+        margin: auto;
+       
+    }
+    #middlebox{
+        width: fit-content;
+    }
+  
+    span{
+        font-size: inherit;
+    }
+    #navbar{
+        display:inherit
+    }
+    #footer{
+        width:fit-content;
+    
+    }
+    .happy{
+        font-size:inherit
+    }
+
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1355px) {
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 1200px) {
+}

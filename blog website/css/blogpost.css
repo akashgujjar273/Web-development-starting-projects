@@ -1,0 +1,47 @@
+.post-img{
+    height: 500px;
+    overflow: hidden;
+}
+.post-img img{
+    width: 100%;
+}
+
+.blog-post-content p{
+    font-size: 20px;
+}
+
+.blog-post-content h1{
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.more-post{
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogpost-meta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogpost-meta img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.author-info{
+    margin: 12px 0px;
+}
+.author-info div{
+    padding: 4px 0px;
+    font-family: var(--font2);
+}
+.social{
+    align-self: center;
+    padding-right: 20px;
+}

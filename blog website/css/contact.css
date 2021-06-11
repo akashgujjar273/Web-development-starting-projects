@@ -1,0 +1,26 @@
+.contact-content{
+    height: 100vh;
+    /* background-color: royalblue; */
+    display: block;
+    margin-top: 30px;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.contact-content::after{
+    top: 0;
+    background-image: url('../img/allmight2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+}
+/* .contact-form{
+    height: 80vh;
+} */

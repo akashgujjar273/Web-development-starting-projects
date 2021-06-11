@@ -1,0 +1,23 @@
+//- ye ab base.pug se chize utha rha h aur base.pug home se
+//- same yhi extende lga k baki jgh bhi same template nuse ho skti h base.pug se
+//- isme style.css use krna ek achi chiz nhi h style.css m alg chizo ki id already define h
+extends base.pug
+block scripts
+  script(src='../static/index.js  ')
+
+block style 
+    style
+      include ../static/style.css
+      include ../static/stylecontact.css
+
+block content 
+    div.container 
+        h1 Contact us
+        form(action= "/contact", method= "post", class= "myForm")
+            <input type="text"class= "myInput" name="name" placeholder="Enter your name..">
+            <input type="phone" class= "myInput" name="phone" placeholder="Enter your phone number..">
+            <input type="email" class= "myInput" name="email" placeholder="Enter your email..">
+            <input type="text" class="myInput" name="Address" placeholder="Enter your Address">
+            <input type="text" class="myInput" name="desc" placeholder="Enter your concern">
+            button(class="btn")
+                | Submit    
